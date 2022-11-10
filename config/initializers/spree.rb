@@ -7,10 +7,11 @@ Spree.load_defaults '3.2.4'
 Spree.config do |config|
   # Core:
   # Default currency for new sites
-  config.currency = "USD"
+  config.currency = 'KES'
+  config.default_country_iso = 'KE'
 
   # from address for transactional emails
-  config.mails_from = "store@example.com"
+  config.mails_from = 'store@example.com'
 
   # Uncomment to stop tracking inventory levels in the application
   # config.track_inventory_levels = false
@@ -75,7 +76,7 @@ Spree::Api::Config.configure do |config|
   config.requires_authentication = true
 end
 
-Spree.user_class = "Spree::LegacyUser"
+Spree.user_class = 'Spree::LegacyUser'
 
 # Rules for avoiding to store the current path into session for redirects
 # When at least one rule is matched, the request path will not be stored
