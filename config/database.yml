@@ -81,6 +81,4 @@ test:
 #
 production:
   <<: *default
-  database: kaburu_cereals_production
-  username: kaburu_cereals
-  password: <%= ENV['KABURU_CEREALS_DATABASE_PASSWORD'] %>
+  url: <%= ENV['DATABASE_URL'] %>
