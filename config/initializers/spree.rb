@@ -73,7 +73,7 @@ Spree::Backend::Config.configure do |config|
 end
 
 Spree::Api::Config.configure do |config|
-  config.requires_authentication = true
+  config.requires_authentication = false
 end
 
 Spree.user_class = 'Spree::LegacyUser'
