@@ -9,6 +9,7 @@ Spree.config do |config|
   # Default currency for new sites
   config.currency = 'KES'
   config.default_country_iso = 'KE'
+  config.address_requires_state = false
 
   # from address for transactional emails
   config.mails_from = 'store@example.com'
